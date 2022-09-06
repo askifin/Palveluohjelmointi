@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Server Programming 1</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	</head>
+	<body>
+		<div th:if="${age} &gt; 18">
+			<p th:text="'Welcome ' + ${name} + '!'" />
+		</div>
+		
+		<div th:if="${age} &lt; 19">
+			<p th:text="'You are too young'" />
+		</div>
+		
+	</body>
+</html>
+
+<!-- 
+Tehtävän annossa pitää olla YLI 18 eli tasan 18 ei käy.
+ -->
